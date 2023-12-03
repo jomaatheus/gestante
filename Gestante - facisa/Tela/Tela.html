@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde da Gestante</title>
+    <link rel="stylesheet" href="Tela.css">
+</head>
+<body>
+
+<div class="container">
+    <button class="back-button" onclick="goBack()">Voltar</button>
+    <header>
+        <h2>Saúde da Gestante</h2>
+    </header>
+
+    <div class="section-buttons">
+        <a href="#consultas" class="section-button">Consultas</a>
+        <a href="#historico-obstetrico" class="section-button">Histórico Obstétrico</a>
+        <a href="#gestacao-atual" class="section-button">Gestação Atual</a>
+        <a href="#ultrassons" class="section-button">Ultrassons</a>
+        <a href="#exames-laboratoriais" class="section-button">Exames Laboratoriais</a>
+        <a href="#vacinas" class="section-button">Vacinas</a>
+    </div>
+
+    <!-- Adicione as seções abaixo com o conteúdo correspondente -->
+
+    <div class="action-buttons">
+        <button id="btnInicio" class="action-button">Início</button>
+        <button id="btnAcesso" class="action-button">Acesso</button>
+        <button id="btnPerfis" class="action-button">Perfis</button>
+    </div>
+</div>
+<script>
+
+    function goBack() {
+        window.history.back();
+    }
+
+</script>
+</body>
+</html>
