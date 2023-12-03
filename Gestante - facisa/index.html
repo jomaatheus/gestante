@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login/Login.css">
+    <title>Página de Login</title>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Entrar</h2>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group remember-me">
+        <input type="checkbox" id="remember-me" name="remember-me">
+        <label for="remember-me">Lembrar de Mim</label>
+    </div>
+
+    <button type="button" onclick="redirect()">Entrar</button>
+
+    <div class="form-group">
+        <a class="forgot-password" href="#"><p> Esqueceu sua senha?</p></a>
+    </div>
+
+    <div class="form-group">
+        <p>Ainda não tem uma conta?</p>
+        <a href="#">Solicitar acesso</a>
+    </div>
+</div>
+
+<script>
+    function redirect() {
+        window.location.href = "./Usuario/Usuario.html";
+    }
+</script>
+
+</body>
+</html>

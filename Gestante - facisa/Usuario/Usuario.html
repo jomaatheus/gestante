@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Usuario.css">
+    <title>Seleção de Perfil</title>
+</head>
+<body>
+
+<div class="profile-selection-container">
+    <h2>Prezado Usuario</h2>
+    <h4>Selecione seu perfil</h4>
+
+    <div class="profile-options">
+        <button onclick="selectProfile('gestante')">Gestante</button>
+        <button onclick="goToGestantePage()">Obstetra</button>
+    </div>
+
+    <button onclick="goToLogin()">Voltar para o Login</button>
+</div>
+
+<script>
+    function selectProfile(profile) {
+        // Aqui você pode realizar ações com base no perfil selecionado
+        console.log('Perfil selecionado:', profile);
+    }
+
+    function goToGestantePage() {
+        window.location.href = "../CadastrarGestante/Cadastro.html"; // Substitua "cadastro_gestante.html" pelo caminho real da sua página de cadastro de gestante
+    }
+
+    function goToLogin() {
+        window.location.href = "../index.html"; // Substitua "login.html" pelo caminho real da sua página de login
+    }
+</script>
+
+</body>
+</html>
